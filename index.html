@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="https://kit.fontawesome.com/7ae3d54118.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style3.css" type="text/css">
+    <link rel="icon" href="img/basket.png">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="sign_in">
+            <div class="left">
+                <video height="100%" autoplay muted loop>
+                    <source src="img/videoo.mp4" type="video/mp4">
+                </video>
+                <div class="logo">
+
+                    <h1><i class="fab fa-accusoft"></i>VMS</h1>
+                    <p>Venue Management System</p>
+                    <h5>A poweful,yet easy-to-use application for managing venue geospatial data</h5>
+                </div>
+                <div class="name">
+                    uttsho banik joy
+                </div>
+            </div>
+
+
+            <div class="right">
+                <div class="tog" onclick="myFunction()">
+                    <div class="togl"></div>
+                </div>
+
+                <div class="top">
+                    <div class="text">
+                        <p>Don't have an account?</p>
+                    </div>
+                   
+                    <div class="btn"> <a href="https://joy-banik698.github.io/multipleForm/"> <button>reqest access</button></a></div>
+                </div>
+
+                <div class="form">
+                    <div class="si">
+                        <h1>Sing in</h1>
+                        <p>Enter your details below</p>
+                    </div>
+                    <div class="fi">
+                        <p>EMAIL ADDRESS</p>
+                        <input type="email" placeholder="Enter your email">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                    </div>
+                    <div class="fl">
+                        <p>PASSWORD</p>
+                        <input type="password" placeholder="Enter your password">
+                        <div class="icon2"><i class="fas fa-key"></i></div>
+                    </div>
+
+                    <div class="btn2">
+                        <p><input type="checkbox"> Remember me</p>
+                        <button>SIGN IN</button>
+                        <a href="#">Forget_your_password?</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var togl=document.querySelector('.tog')
+        togl.addEventListener('click',()=>{
+            document.body.classList.toggle('dark-theme')
+        })
+    </script>
+</body>
+
+</html>

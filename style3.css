@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+:root{
+    --background:white;
+    --color:black;
+    --togl:black;
+
+    --background-body-color:#d4418e;
+    --background-body: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
+    
+    --linkbtnback:black;
+    --linkbtncol:white;
+}
+.dark-theme{
+    --background:black;
+    --color:white;
+    --placeholder:#ddd;
+    --togl:white;
+    --togl-move:17px;
+
+    --background-body-color: #7f5a83;;
+    --background-body:linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
+    --linkbtnback:#dddd;
+    --linkbtncol:black;
+    
+
+}
+::placeholder{
+    color: var(--placeholder);
+    background: var(--background);
+}
+.tog{
+    width: 30px;
+    margin:10px 10px;
+    /* margin-left: 205px; */
+    border-radius: 10px;
+    background: #ddd;
+    float: right;
+}
+.togl {
+  width: 15px ;
+  height: 15px;
+  border-radius: 50%;
+  background:var(--togl);
+  margin-left: var(--togl-move);
+  transition: all .5s ease;
+  
+}
+
+.main{
+    /*background: linear-gradient(
+90deg
+, rgba(0, 114, 251, 1) 0%, rgba(79, 158, 255, 1) 28%, rgba(79, 158, 255, 1) 51%, rgba(242, 111, 224, 1) 80%);*/
+
+/*background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);*/
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;
+
+background-color: var(--background-body-color);
+background-image: var(--background-body);
+
+    background-repeat: no-repeat;
+}
+
+
+
+.sign_in {
+    width: 950px;
+    height: 520px;
+    /* margin: auto;
+    margin-top: 60px; */
+    background: var(--background);
+    border-radius: 12px;
+    display: flex;
+    /* margin-bottom: 50px; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    position: relative;
+    object-fit: fill;
+}
+
+video {
+    margin-left: -300px;
+    position: relative;
+    object-fit: fill;
+}
+
+.logo {
+    position: absolute;
+    width: 240px;
+    height: 100px;
+    background: transparent;
+    margin-top: -350px;
+    margin-left: 60px;
+    color: white;
+}
+
+.logo h1 {
+    padding-left: 50px;
+}
+
+.logo p {
+    padding: 5px 10px;
+}
+
+.logo h5 {
+    background: transparent;
+    padding: 30px 0px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+.name {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 20px;
+    background: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.form {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.si {
+    width: 200px;
+    color: var(--color);
+}
+
+.fi {
+    padding-top: 30px;
+    color: green;
+    position: relative;
+}
+
+.fi input {
+    padding: 12px 30px;
+    padding-right: 50px;
+    border: none;
+    border-bottom: 1px solid green;
+    outline: none;
+    background: var(--background);
+    color: var(--color);
+}
+
+
+.fl {
+    padding-top: 30px;
+    color: #3E94FF;
+    position: relative;
+}
+
+.fl input {
+    padding: 8px 30px;
+    padding-right: 50px;
+    border: none;
+    border-bottom: 1px solid #3E94FF;
+    outline: none;
+    background: var(--background);
+    color: var(--color);
+}
+
+
+.btn2 {
+    margin-top: 25px;
+    width: 200px;
+    height: 150px;
+}
+
+.btn2 p {
+    padding-left: 5px;
+    color: var(--color);
+}
+
+.btn2 button {
+    border: none;
+    padding: 5px 40px;
+    margin: 10px 0px;
+    /*background: rgb(0, 114, 251);
+    background: linear-gradient(90deg, rgb(72, 130, 255) 0%, rgb(61, 148, 255) 28%, rgba(79, 158, 255, 1) 51%, rgb(221, 89, 203) 80%);*/
+
+    /*background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);*/
+
+    background-color: #0abcf9;
+background-image: linear-gradient(315deg, #0abcf9 0%, #2c69d1 74%);
+    
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px black;
+    margin-bottom: 20px;
+    transition:all 1s ease;
+}
+
+.btn2 a {
+    color: var(--color);
+    text-decoration: none;
+}
+
+.btn2 button:hover {
+    background: rgba(0, 114, 251, 1);
+    
+
+}
+
+.top {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 220px;
+    margin-top: 25px;
+}
+
+.text {
+    margin: 12px 0px;
+    margin-left: 80px;
+    font-size: 16px;
+    color: var(--color);
+}
+
+.btn button {
+    /* background: white; */
+    /*background: linear-gradient(538deg, black, transparent);*/
+
+    background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+
+
+    border: none;
+    padding: 5px 30px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #dddd;
+    transition:all 1s ease;
+}
+
+.btn button:hover {
+    /*background: linear-gradient(black,black);*/
+    background:var(--linkbtnback);
+    color: var(--linkbtncol);
+}
+
+.icon {
+    position: absolute;
+    margin-top: -30px;
+}
+
+.icon2 {
+    position: absolute;
+    margin-top: -25px;
+}
+
+.right {
+    background: url(img/signint.png);
+    background-repeat: no-repeat;
+    background-size: 310px;
+    background-position-x: 330px;
+    background-position-y: 200px;
+    border-bottom-right-radius: 12px;
+    object-fit: fill;
+}
